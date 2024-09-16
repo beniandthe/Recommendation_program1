@@ -8,3 +8,5 @@ class Vertex:
 
   def get_edges(self):
     return list(self.edges.keys())
+
+    

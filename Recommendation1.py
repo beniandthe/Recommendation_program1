@@ -9,6 +9,7 @@
 #The program will then accept inout to either select a movie or try a different search
 #If a movie is selected, the program will return that movie plus a list of movies that are similar to the selected movie
 #The program will then accept input to either select a movie or try a different search
+from typing import Any
 from graph_class import Graph
 from movie_list import movie_graph
 
@@ -51,11 +52,6 @@ def get_genres():
         print(item)
     return user_input
 
-
-
-
-
-#Display list of movies that are edges of that genre vertex. Suggestions for similar movies will be displayed for neighbor in edges.
 def display_movies(graph, first_choice):
     movies = graph.graph_dict[first_choice].edges
     print("Here are some movies in the genre: ")
@@ -63,9 +59,9 @@ def display_movies(graph, first_choice):
         print(movie)
 
 
-    
-    
-    
+
+
+            
     
     
     
@@ -73,6 +69,8 @@ def display_movies(graph, first_choice):
 def main():
     greeting()
     get_genres()
+    
+    
     
 main()
 
